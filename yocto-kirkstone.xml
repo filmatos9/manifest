@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  	<remote name="github" fetch="https://github.com/"/>
+  	<project  remote="github" name="yoctoproject/poky" path="external/yocto/poky" revision="kirkstone" />
+	<project  remote="github" name="openembedded/meta-openembedded" path="external/yocto/meta-openembedded" revision="kirkstone" />
+	
+  	<remote name="yoctoproject" fetch="https://git.yoctoproject.org/" />
+  	<project remote="yoctoproject" name="meta-selinux" path="external/yocto/meta-selinux" revision="kirkstone" />
+
+	<remote name="fordgithub" fetch="ssh://git@github.ford.com/" />
+  	<project remote="fordgithub" name="FMATOS4/meta-filipe" path="filipe/yocto/meta-filipe" revision="main" />
+  	<project remote="fordgithub" name="FMATOS4/yocto-poky-build" path="filipe/yocto/build" revision="main" >
+	    <linkfile src="filipe/yocto/build/env_setup.sh" dest="env_setup.sh"/>
+	</project>
+
+</manifest>
