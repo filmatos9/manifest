@@ -11,7 +11,7 @@
 	<remote name="filmatos9" fetch="ssh://git@github.com/" />
   	<project remote="filmatos9" name="filmatos9/meta-filipe" path="yocto/meta-filipe" revision="main" />
   	<project remote="filmatos9" name="filmatos9/yocto-utils" path="yocto/utils" revision="main" >
-	    <linkfile src="yocto/utils/build/env_setup.sh" dest="env_setup.sh"/>
+	    <linkfile src="build/env_setup.sh" dest="env_setup.sh"/>
 	</project>
 
 </manifest>
